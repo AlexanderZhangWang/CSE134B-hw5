@@ -25,14 +25,13 @@ class ProjectCard extends HTMLElement {
             const tags = tagsAttr.split(",").map(tag => tag.trim());
             tagsHTML = `<ul class="skill">${tags.map(tag => `<li>${tag}</li>`).join("")}</ul>`;
         }
-      this.innerHTML = `
-        
+      this.innerHTML = `  
         <header>${this.getAttribute("date") || "Date"}</header>
         <div>
             <h3>
                 <span>
                     ${this.getAttribute("title") || "Project Title"} 
-                    <a title="Link" href="${this.getAttribute("link") || "#"}" >
+                    <a title="Link" target="_blank" href="${this.getAttribute("link") || "#"}" >
                     <svg xmlns="http://www.w3.org/2000/svg" class="link" aria-hidden="true" viewBox="0 0 16 12"><line x1="3" y1="13" x2="13" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="8,3 13,3 13,8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </a>
                 </span>
@@ -45,12 +44,11 @@ class ProjectCard extends HTMLElement {
             </ul>
             <figure>
                 <picture>
-                    <img src="${this.getAttribute("img")}" alt="${this.getAttribute("alt") || "Project Image"}">
+                    <img src="${this.getAttribute("img") || 'images/default.png'}" alt="${this.getAttribute("alt") || "Project Image"}">
                 </picture>
                 <figcaption>${this.getAttribute("title")}</figcaption>
             </figure>
-        </div>
-        
+        </div>    
       `;
     }
   }
