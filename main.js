@@ -11,9 +11,14 @@ function loadProjectCards() {
         })
         .catch((error) => console.error("Error fetching projects:", error));
     }
-  }
-  
+}
+function parseStartDate(dateRangeStr) {
+    const startDateStr = dateRangeStr.split(" - ")[0]; 
+    console.log(startDateStr);
+    return new Date("1 " + startDateStr);
+}
 function createCards(projects) {
+    // projects.sort((a, b) => parseStartDate(b.date) - parseStartDate(a.date));
     const container = document.querySelector("#projects .project_list");
     projects.forEach((project) => {
         const card = document.createElement("project-card");

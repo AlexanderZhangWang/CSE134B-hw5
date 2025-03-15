@@ -45,7 +45,7 @@ class ProjectCard extends HTMLElement {
             </ul>
             <figure>
                 <picture>
-                    <img src="${this.getAttribute("img") }" alt="${this.getAttribute("alt") || "Project Image"}">
+                    <img src="${this.getAttribute("img")}" alt="${this.getAttribute("alt") || "Project Image"}">
                 </picture>
                 <figcaption>${this.getAttribute("title")}</figcaption>
             </figure>
