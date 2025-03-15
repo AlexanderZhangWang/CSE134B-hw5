@@ -1,0 +1,36 @@
+[
+    {
+      "title": "Instructional Assistant / Tutor",
+      "company": "UCSD CSE",
+      "date" : "January 2025 - March 2025",
+      "description": "CSE 130 Programming Languages - Teaching and tutoring Lambda Calculus and Haskell.",
+      "link": "https://cse.ucsd.edu/",
+      "tags": ["Lambda Calculus", "Haskell"]
+    },
+    {
+      "title": "IT Development Intern",
+      "company": "Hongji (Suzhou) Automotive Parts",
+      "date" : "July 2024 - August 2024",
+      "description": "Developed and optimized Java modules to integrate JSON data from China Merchants Bank APIs, automating daily updates in SQL Server and improving OA system data retrieval efficiency by 50%.",
+      "link": "https://hongji.global/hongji-automotive/",
+      "tags": ["Java", "Sql Server", "React", "PostgreSql", "ERP", "MES"]
+    },
+    {
+      "title": "Frontend Developer Intern",
+      "company": "AIMigo",
+      "date" : "February 2025 - Present",
+      "description": "Developed dashboard feature for AIMigo's web application, and implemened GO API endpoints for the dashboard.",
+      "link": "https://aimigo-go.com/",
+      "tags": ["Next.js", "TypeScript", "Tailwind CSS", "GoLang", "Figma"]
+    },
+    {
+      "title": "Backend Development Engineer",
+      "company": "Chainstorm LLC",
+      "date" : "February 2025 - Present",
+      "description": "Developed microservices for the backend server using JAVA JDK 8, SpringBoot and with JAVA Selenium library.",
+      "link": "https://linkedin.com/company/chainstorm-llc/",
+      "tags": ["JAVA", "SpringBoot", "Selenium", "Microservices"]
+    }
+    
+  ]
+  

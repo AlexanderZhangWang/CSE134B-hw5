@@ -30,6 +30,7 @@
 .light-theme textarea {
     color: #111 !important; 
 }
+
 #themeToggle, #loadLocal, #loadRemote {
     height: 1.5rem;
     padding: 0.2rem;
@@ -44,20 +45,49 @@
 
 @font-face {
     font-family: "Monomakh";
-    src: url("Monomakh-Regular.ttf");
+    src: url("../font/Monomakh-Regular.ttf");
 }
 
 body {
     font-family: "Monomakh", sans-serif;
 }
   
-h1, h2, h3 {
+h1, h2, h3, #filter{
     color: rgb(226, 232, 240);
     color: color-mix(in srgb, #E2E8F0 100%, black 0%)
 }
   
 p {
     color: #94A3B8;
+}
+#search {
+    display: flex;          
+    align-items: center;    
+    gap: 1rem;  
+    margin: 1rem;
+    padding: 1rem;           
+}
+#searchInput {
+    padding: 0.5rem;        
+    border-radius: 5px;     
+    border: solid;          
+    color: black;         
+    background-color: white; 
+}
+#skill-filter, #skill-filter option {
+    padding: 0.5rem;        
+    border-radius: 5px;     
+    border: solid;          
+    color: black;         
+    background-color: white; 
+}
+address {
+    color: #94A3B8;
+    margin: 3rem;
+}
+#project_list {
+    padding: 1rem;
+    margin: 1rem;
 }
 
 #myself {
@@ -218,6 +248,19 @@ figure:has(figcaption) {
         font-family: sans-serif;
         font-size: 1rem;
     }
+}
+.light-theme .skill li {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    color: rgb(52, 136, 123);
+    padding: 0.25rem 0.75rem;
+    background-color: rgb(94, 234, 212);
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    border: 0 solid #e5e7eb;
+    font-family: sans-serif;
+    font-size: 1rem;
 }
 .resume {
     margin: 0.2rem 2rem;
@@ -400,20 +443,24 @@ input:placeholder-shown {
             }
         }
     }
-    .project_list > li > project-card {
+    .project_list > li > project-card,
+    .experience_list > li > experience-card {
         display: flex;
         align-items: stretch;
     }
-    .project_list > li > project-card > header {
+    .project_list > li > project-card > header,
+    .experience_list > li > experience-card > header {
         display: flex;
         width: 15vw;
     }
-    .project_list > li > project-card > div {
+    .project_list > li > project-card > div,
+    .experience_list > li > experience-card > div {
         flex: 1;
         display: flex;
         flex-direction: column;
     }
-    .project_list > li > project-card > div > h3 > em {
+    .project_list > li > project-card > div > h3 > em,
+    .experience_list > li > experience-card > div > h3 > em {
         display: block; 
     }
     img {
@@ -458,15 +505,18 @@ input:placeholder-shown {
             }
         }
     }
-    .project_list > li > project-card {
+    .project_list > li > project-card,
+    .experience_list > li > experience-card {
         display: flex;
         align-items: stretch;
     }
-    .project_list > li > project-card > header {
+    .project_list > li > project-card > header,
+    .experience_list > li > experience-card > header {
         display: flex;
         width: 15vw;
     }
-    .project_list > li > project-card > div {
+    .project_list > li > project-card > div,
+    .experience_list > li > experience-card > div {
         flex: 1;
         display: flex;
         flex-direction: column;

@@ -53,6 +53,5 @@ class ProjectCard extends HTMLElement {
     }
   }
   
-  // Define the custom element.
-  customElements.define("project-card", ProjectCard);
+customElements.define("project-card", ProjectCard);
   
