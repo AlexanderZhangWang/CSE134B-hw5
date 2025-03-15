@@ -41,5 +41,18 @@
     ],
     "link": "https://google.com/",
     "tags": ["C", "WireShark", "Docker", "Linux", "Networking"]
+  },
+  {
+    "title": "Extreme World",
+    "date" : "July 2024 - January 2025",
+    "img": "images/extreme_world_l.jpg",
+    "alt": "Extreme World Game Screenshot",
+    "description": [
+      "Developed a 3D cartoon-style MMORPG in Unity using C# and backend services using .Net Framework, integrating SQL Server for robust data management. Implemented seamless scene transitions (main city, wilderness, and instances) and diverse gameplay mechanics with three character classes.",
+      "Designed and integrated item management, backpack systems, shop system, equipment handling, and quest progression, enhancing gameplay depth and user engagement.",
+      "Optimized data storage with a bit array, reducing backpack state storage requirements by 8x in the database."
+    ],
+    "link": "https://github.com/AlexanderZhangWang/ExtremeWorld",
+    "tags": ["Unity", "C#", ".Net", "SQL Server", "ProtoBuf"]
   }
 ]
