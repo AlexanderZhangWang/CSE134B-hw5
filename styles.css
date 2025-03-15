@@ -379,7 +379,7 @@ input:placeholder-shown {
         padding: 0.2rem;
     }
     .experience_list,
-    /* .project_list {
+    .project_list {
         > li {
             display: flex;
             align-items: stretch;
@@ -399,7 +399,7 @@ input:placeholder-shown {
                 }
             }
         }
-    } */
+    }
     .project_list > li > project-card {
         display: flex;
         align-items: stretch;
@@ -443,7 +443,7 @@ input:placeholder-shown {
         margin: 1rem;
     }
     .experience_list,
-    /* .project_list {
+    .project_list {
         > li {
             display: flex;
             align-items: stretch;
@@ -457,7 +457,7 @@ input:placeholder-shown {
                 flex-direction: column;
             }
         }
-    } */
+    }
     .project_list > li > project-card {
         display: flex;
         align-items: stretch;

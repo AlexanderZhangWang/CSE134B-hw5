@@ -9,7 +9,7 @@ class ProjectCard extends HTMLElement {
     }
   
     static get observedAttributes() {
-      return ["title", "img", "alt", "description", "link", "tags"];
+      return ["title", "date", "img", "alt", "description", "link", "tags"];
     }
   
     attributeChangedCallback(name, oldVal, newVal) {
@@ -27,7 +27,7 @@ class ProjectCard extends HTMLElement {
         }
       this.innerHTML = `
         
-        <header>December 2023 - March 2024</header>
+        <header>${this.getAttribute("date") || "Date"}</header>
         <div>
             <h3>
                 <span>
@@ -38,15 +38,13 @@ class ProjectCard extends HTMLElement {
                 </span>
             </h3>
             <p>
-                ${this.getAttribute("description")}                          
+                ${this.getAttribute("description") || "Project Description"}                          
             </p>
             <ul class="skill">
                 ${tagsHTML}
             </ul>
             <figure>
                 <picture>
-                    <source media="(max-width: 1024px)" srcset="images/successorator_m.png">
-                    <source media="(max-width: 480px)" srcset="images/successorator_s.png">
                     <img src="${this.getAttribute("img") }" alt="${this.getAttribute("alt") || "Project Image"}">
                 </picture>
                 <figcaption>${this.getAttribute("title")}</figcaption>

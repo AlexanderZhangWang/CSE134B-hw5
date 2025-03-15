@@ -1,6 +1,7 @@
 [
   {
     "title": "Successorator",
+    "date" : "December 2023 - March 2024",
     "img": "images/successorator_l.png",
     "alt": "Successorator App Screenshot",
     "description": "Led a team to develop an Android task management app using Java, XML, and SQLite.",
@@ -9,6 +10,7 @@
   },
   {
     "title": "Vymsical Music Guessing Game",
+    "date" : "September 2023 - December 2023",
     "img": "images/vymsical_proj_l.png",
     "alt": "Vymsical Game Screenshot",
     "description": "Developed an interactive music quiz game using Next.js.",

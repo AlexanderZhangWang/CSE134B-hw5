@@ -18,6 +18,7 @@ function createCards(projects) {
     projects.forEach((project) => {
         const card = document.createElement("project-card");
         card.setAttribute("title", project.title);
+        card.setAttribute("date", project.date);
         card.setAttribute("img", project.img);
         card.setAttribute("alt", project.alt);
         card.setAttribute("description", project.description);
