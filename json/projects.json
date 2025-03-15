@@ -4,7 +4,10 @@
     "date" : "December 2023 - March 2024",
     "img": "images/successorator_l.png",
     "alt": "Successorator App Screenshot",
-    "description": "Led a team to develop an Android task management app using Java, XML, and SQLite.",
+    "description": [
+      "Led a team of six to develop Success List, an Android task management app, leveraging Java, XML, and SQLite for seamless UI design and efficient persistent data storage",
+      "Practiced Agile development with Behavior-Driven Development (BDD), enabling iterative delivery, enhanced team collaboration, and streamlined development cycles."
+    ],
     "link": "https://github.com/CSE-110-Winter-2024/project-team-25",
     "tags": ["Java", "Android Studio", "SQLite"]
   },
@@ -16,5 +19,27 @@
     "description": "Developed an interactive music quiz game using Next.js.",
     "link": "https://vymsical-dev.vercel.app/start",
     "tags": ["Next.js", "Vercel", "TypeScript"]
+  },
+  {
+    "title": "Water Purity Tester",
+    "date" : "January 2025 - March 2025",
+    "img": "images/water_purity_l.jpg",
+    "alt": "Water Purity Tester Photo",
+    "description": "Developed a ESP32 Water Purity Testing System and Flask backend server with SQLite database.",
+    "link": "https://devpost.com/software/water-purity-tester",
+    "tags": ["ESP32", "Embeded", "Flask", "SQLite"]
+  },
+  {
+    "title": "Sliding Window Protocol & Packet Forwarding Router",
+    "date" : "September 2024 - December 2024",
+    "img": "",
+    "alt": "No Photo",
+    "description": [
+      "Implemented a C-based transport-layer protocol adhering to RFC 2001, incorporating TCP congestion control mechanisms: Slow Start, Congestion Avoidance, Fast Retransmit, and Fast Recovery.",
+      "Reduced latency by 30% through optimized retransmission strategies, adaptive timeouts, and selective retransmission, ensuring 100% reliability under a 0.9 packet loss rate, validated through extensive edge-case testing.",
+      "Developed robust error-handling mechanisms, including ICMP Host/Network/Port Unreachable, as well as ARP timeout-based recovery, validated 95% of edge cases in dynamic routing tests."
+    ],
+    "link": "https://google.com/",
+    "tags": ["C", "WireShark", "Docker", "Linux", "Networking"]
   }
 ]

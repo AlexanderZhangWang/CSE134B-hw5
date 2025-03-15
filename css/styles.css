@@ -217,9 +217,13 @@ nav {
                     display: inline;
                 }
             }
-            p {
+            article {
                 margin: 0.2rem;
                 padding: 0.2rem;
+                p {
+                    margin: 0rem;
+                    padding: 0rem;
+                }
             }
         }
     }

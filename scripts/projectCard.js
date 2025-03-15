@@ -19,11 +19,25 @@ class ProjectCard extends HTMLElement {
     }
   
     render() {
+        const rawDescription = this.getAttribute("description") || "[]";
+        let descriptionHTML = "";
+        try {
+          const descArray = JSON.parse(rawDescription);
+          if (Array.isArray(descArray)) {
+            descriptionHTML = descArray
+              .map(line => `<p>${line}</p>`)
+              .join("");
+          } else {
+            descriptionHTML = `<p>${rawDescription}</p>`;
+          }
+        } catch (err) {
+          descriptionHTML = `<p>${rawDescription}</p>`;
+        }
         const tagsAttr = this.getAttribute("tags");
         let tagsHTML = "";
         if (tagsAttr) {
-            const tags = tagsAttr.split(",").map(tag => tag.trim());
-            tagsHTML = `<ul class="skill">${tags.map(tag => `<li>${tag}</li>`).join("")}</ul>`;
+          const tags = tagsAttr.split(",").map(tag => tag.trim());
+          tagsHTML = `<ul class="skill">${tags.map(tag => `<li>${tag}</li>`).join("")}</ul>`;
         }
       this.innerHTML = `  
         <header>${this.getAttribute("date") || "Date"}</header>
@@ -36,9 +50,9 @@ class ProjectCard extends HTMLElement {
                     </a>
                 </span>
             </h3>
-            <p>
-                ${this.getAttribute("description") || "Project Description"}                          
-            </p>
+            <article>
+              ${descriptionHTML}
+            </article>
             <ul class="skill">
                 ${tagsHTML}
             </ul>

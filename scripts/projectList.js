@@ -84,12 +84,18 @@ function renderProjects() {
         card.setAttribute("date", project.date);
         card.setAttribute("img", project.img);
         card.setAttribute("alt", project.alt);
-        card.setAttribute("description", project.description);
+        // card.setAttribute("description", project.description);
         card.setAttribute("link", project.link);
         
         if (project.tags && Array.isArray(project.tags)) {
             card.setAttribute("tags", project.tags.join(","));
         }
+        if (Array.isArray(project.description)) {
+            card.setAttribute("description", JSON.stringify(project.description));
+          } else {
+            card.setAttribute("description", project.description);
+          }
+          
 
         const listItem = document.createElement("li");
         listItem.appendChild(card);
