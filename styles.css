@@ -30,7 +30,7 @@
 .light-theme textarea {
     color: #111 !important; 
 }
-#themeToggle {
+#themeToggle, #loadLocal, #loadRemote {
     height: 1.5rem;
     padding: 0.2rem;
     border: #94A3B8 solid;
