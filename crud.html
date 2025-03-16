@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD from JSON</title>
+</head>
+<body>
+    <h1>CRUD from Local JSON</h1>
+
+    <button id="fetchBtn">Fetch from crud.json</button>
+    <button id="readBtn">Read from localStorage</button>
+
+    <ul id="crudList"></ul>
+
+    <div>
+        <h2>Create / Update an Item</h2>
+        <form id="crudForm">
+            <label>ID:</label>
+            <input type="text" id="crudId" placeholder="Leave empty to auto-create" />
+            <br>
+
+            <label>Title*:</label>
+            <input type="text" id="crudTitle" />
+            <br>
+
+            <label>Description*:</label>
+            <input type="text" id="crudDesc" />
+            <br>
+
+            <button type="submit">Create/Update</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>Delete an Item</h2>
+        <label>ID:</label>
+        <input type="text" id="deleteId" />
+        <button id="deleteBtn">Delete</button>
+    </div>
+
+    <script src="scripts/crud.js"></script>
+</body>
+</html>
